@@ -1,0 +1,16 @@
+[
+  {
+     "_id": 1,
+     "nombre": "Admin"
+     "email": "Admin@gmail.com"
+     "rut": "11111111-1"
+     "fecha_nacimiento": "01-01-01"	
+  },
+  {
+     "_id": 2,
+     "nombre": "UnUsuario"
+     "email": "UnUsuario@gmail.com"
+     "rut": "22222222-2"
+     "fecha_nacimiento": "02-02-02"
+  }
+]
