@@ -10,8 +10,8 @@ const response = await requestPromise(
 );
 
 const $ =  cheerio.load(response);
-const title = $("table").text();
+const title = $("title").text();
 
-console.log(table);
+console.log(title);
     
 })();
