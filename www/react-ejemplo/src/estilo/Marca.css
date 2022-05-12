@@ -1,0 +1,24 @@
+.Contenedor-Marca{
+    height: 250px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 210 255/ 25%);  
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /50%);
+}
+.Imagen-Marca{
+    height: 100%;
+    width: auto;
+}
+
+.Descripcion-Marca{
+    text-align: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    line-height: 1.5rem;/*separacion*/
+}
+.Nombre-Marca{
+    font-size: 1.5rem;
+}

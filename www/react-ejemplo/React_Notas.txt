@@ -1,0 +1,32 @@
+npx create-react-app <nombre de la carpeta>   --> crear app react
+npx create-react-app . --> crear app react en en la carpeta que te encuentras  
+npm start --> Esto se hace dentro de la carpeta de la aplicacion para ejecutar la pagina 
+Descargar React Developer Tools en el navegador que se utilice
+
+Para agregar un elemento a la pagina debemos crear una exportacion dentro del archivo donde se
+encuentra el elemento en este caso dentro Producto.jsx al final escribimos "export default Productos" que es el nombre de la funcion,
+tambien creamos la exportacion de App en App.jsx y luego en el archivo App.jsx se importa la funcion Productos
+de esta manera "import Productos from ./componentes/Producto.jsx"
+
+
+si tenemos la palabra export al lado de la palabra function en Producto.jsx entonces tenemos que colocarle las {} a la funcion que importamos 
+para decir el elemento o funcion que se quiere importar
+App.jsx
+"import {Productos} from ./componentes/Producto.jsx"
+
+Producto.jsx
+export function Productos(){
+  return(
+    <div className='Contenedor-Productos'>
+      <img src={require("../img/iphone.jpg")} alt="Iphone" />
+    <div className='Descripcion-Producto'>
+      <p className='Nombre-Producto'>Iphone</p>
+    </div>
+    </div>
+  )
+}
+
+props para personalizar cosas en las funciones y poder utilizar esta funcion en otra cosa para que sea dinamico
+
+Paginacion??
+https://www.digitalocean.com/community/tutorials/how-to-build-custom-pagination-with-react-es

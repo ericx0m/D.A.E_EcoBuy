@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  font-size: 18px;
+  background-color: #EEE0CB;
+}
+
+h1{
+  max-width: 950px;
+  font-size: 2.5em; /*em es factor relativo al tamaño de su contenedor(para que no sea fijo)*/
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 100px 100vh;/*100vh para que bajen los productos*/
+}
+
+.App{
+  min-height: 100vh;/*Para que se adapte a la altura del navegador(tomara minimo el 100% de la pantalla verticalmente)*/
+  display: flex;/*flexbox herramienta de css para definir como se van a ubicar los elementos dentro del contenedor*/
+  flex: wrap;/*Si un elemento toma todo el ancho del contenedor los elementos siguientes bajaran a la sig linea*/
+  align-items: center;/*Alinear elementos en el centro verticalmente*/
+  justify-content: center;/*Centrar horizontalmente*/
+  text-align: center;/*Alinear texto en el centro*/
+}
+
+.Contenedor-Principal{
+  min-height: 600px; /*Altura minima para que dependiendo de la cantidad de productos el contenedor se adaptara*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
