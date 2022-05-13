@@ -1,11 +1,10 @@
 import '../App.css';
-import Marca from '../componentes/Marca.jsx';
-//npm start (en la carpeta del proyecto react)
-export function App(){
-    
+import Marca from "../componentes/Marca";
+//import Botones from "../componentes/Boton";
+export function ProdMarca(){
     return (
-        <div className='App'>
-          <div className='Contenedor-Principal'>
+        <div>
+            <div className='Contenedor-Principal'>
             <h1>Productos</h1>
             <Marca 
               nombre='Iphone'
@@ -29,4 +28,4 @@ export function App(){
 }
 
 //Exportar para ser importado
-export default App; //Exportacion por defecto
+export default ProdMarca; //Exportacion por defecto

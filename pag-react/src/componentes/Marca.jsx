@@ -1,6 +1,5 @@
 import React from 'react';
 import '../estilo/Marca.css';
-//npm start...
 //alt 96 `` comillas invertidas
 function Productos(props){
   return(

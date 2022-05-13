@@ -1,0 +1,100 @@
+* {
+    -webkit-tap-highlight-color: rgb(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  /* -webkit-user-select: none;                 /* prevent copy paste, to allow, change 'none' to 'text' */
+    
+    background: url(../img/fondo.jpg) no-repeat center top;
+    /* background-image:linear-gradient(to Left, #517f8f 0%, #0e3f50 51%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Akshar', sans-serif; /* Tipo de fuente utilizada */
+    
+    height:100vh;
+
+    /*  Quitamos los bordes  */
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width:100%;
+}
+
+.Login-Usuario, .avatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.Login-Usuario{
+    width: 320px;
+    height: 620px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0 3px 13px 1px rgb(20 255 255 /50%);
+    
+}
+
+.Login-Usuario, label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Login-Usuario, h2 {
+    margin: 50px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Login-Usuario, input {
+
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+.Login-Usuario input[type="text"],
+.Login-Usuario input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*.Login-Usuario a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(99, 98, 98);
+    
+}
+
+.Login-Usuario a:hover {
+    color: #fff;
+}
+*/
+.BotonAcceder{
+    margin: 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ 
