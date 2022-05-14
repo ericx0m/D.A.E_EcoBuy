@@ -16,7 +16,7 @@ export default Botones; //Exportacion por defecto
 
 
 //function Botones({texto, esBotondeALGO, manejarClick}){
-//className={esBotondeALGO ? 'BOTONDEESTO' : 'BOTONDEAQUELLO'} Operador terneareo
+//className={esBotondeALGO ? 'BOTONDEESTO' : 'BOTONDEAQUELLO'} Operador terneario
 //
 //
 //
