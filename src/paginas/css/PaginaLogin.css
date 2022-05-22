@@ -1,0 +1,102 @@
+/*body {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(
+      circle,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(30, 54, 59, 1) 0%,
+      rgba(93, 93, 116, 1) 100%
+    );
+  }
+  */
+  .Contenedor-Login .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.Contenedor-Login {
+    width: 320px;
+    height: 520px;
+    background: rgb(33, 37, 41);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+
+.Contenedor-Login label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Contenedor-Login h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Contenedor-Login input {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 35px;
+    background: transparent;
+    border: 3px solid #fff;
+    
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.Contenedor-Login input[type="text"],
+.Contenedor-Login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.Contenedor-Login .submit{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(55, 166, 240);
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(99, 98, 98);
+    
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+.pErr{
+    color: red;
+}
+.Mensaje-Satisfactorio{
+    color: green;
+    border: 2px solid green;
+    text-align: center;
+    height: 60px;
+}
