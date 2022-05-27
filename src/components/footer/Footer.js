@@ -22,7 +22,7 @@ function Footer() {
                             <Link to='/'>Pagína principal</Link>
                         </li>
                         <li>
-                            <Link to='/pajaron'>Biblioteca de aves</Link>
+                            <Link to='/pajaros'>Biblioteca de aves</Link>
                         </li>
                     </ul>
 
