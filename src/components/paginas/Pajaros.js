@@ -16,10 +16,12 @@ const Pajaros = () => {
 
   return (
     <div>          
-        <h1> Esta es la pagina que deberia mostrar la lista de pajaros </h1>
+        <h1>Lista de pajarracos de chile</h1>
         {
-          cargando ?
-          <h1>Cargando...</h1> :
+          cargando 
+          ?
+          <h1>Cargando...</h1>
+           :
           <Cards data={data} /> /* por si acaso data.map(p=>(p)) */
         }
 
