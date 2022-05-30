@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Cardsbird} from './Cardsbird'
+import './Cards.css'
 
 
 export const Cards = ({data}) => {

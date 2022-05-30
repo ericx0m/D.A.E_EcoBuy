@@ -11,9 +11,10 @@ export const Cardsbird = ({url}) => {
   return (
     <div>
         {
-            cargando?
+            cargando
+            ?
             <h1>Cargando...</h1> :
-            <div className='cards' style={{width:'12rem'}}>
+            <div className='card' style={{width:'14rem'}}>
                 <div className='card-header'>
                     <h5 className='card-title'>{data.name.spanish}</h5>
                 </div>
