@@ -22,7 +22,7 @@ export const Cardsbird = ({url}) => {
                 <div className='card-body'>
                     <img src={data.images.main} alt={data.uid} />
                 </div>
-             <Modal id={`id${data.sort}`} titulo={data.name.spanish} contenido={data.images.main} />           
+                <Modal id={`id${data.sort}`} titulo={data.name.spanish} imagen={data.images.main} audio={data.audio.file} descripcion={data.iucn.description} habitat={data.habitat} tamaño={data.size} mapa={data.map.image} />           
             </div>
         }
     </div>
