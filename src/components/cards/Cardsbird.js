@@ -1,5 +1,6 @@
 import React from 'react'
 import { UseFetch } from '../UseFetch'
+import Modal from './Modal'
 
 
 export const Cardsbird = ({url}) => {
@@ -14,13 +15,14 @@ export const Cardsbird = ({url}) => {
             cargando
             ?
             <h1>Cargando...</h1> :
-            <div className='card' style={{width:'14rem'}}>
+            <div className='card' style={{width:'14rem'}} data-bs-toggle="modal" data-bs-target={`#id${data.sort}`}>
                 <div className='card-header'>
                     <h5 className='card-title'>{data.name.spanish}</h5>
                 </div>
                 <div className='card-body'>
                     <img src={data.images.main} alt={data.uid} />
                 </div>
+             <Modal id={`id${data.sort}`} titulo={data.name.spanish} contenido={data.images.main} />           
             </div>
         }
     </div>
