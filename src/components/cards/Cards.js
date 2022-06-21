@@ -4,6 +4,7 @@ import './Cards.css'
 import Paginacion from '../Pagination/Pagination'
 
 
+
 export const Cards = ({data}) => {
   const [actPag, setactPag] = useState(1)
   const [cardXpag] = useState(20)
@@ -20,24 +21,16 @@ export const Cards = ({data}) => {
 
   return (
     <div className='container'>
+      
         <ul className='cards'>
-            {
-                actCard.map(p=>(
-
+            {      actCard.map(p=>(
                   <li className='card-item' key={p.uid}>
-
                       <Cardsbird url={p._links.self}/>
-                      
-                      
                   </li>  
-                  
                 ))
-                
             }
             <div className='container2'><Paginacion cardXpag={cardXpag} totalCards={data.length} paginate={paginate}/></div>
         </ul>
-        
-        
     </div>
   )
 }
