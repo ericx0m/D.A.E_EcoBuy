@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Cards } from '../cards/Cards'
 import { UseFetch } from '../UseFetch'
-
+import { Suspense } from 'react'
 
 
 
@@ -16,7 +16,6 @@ export const Searchcard = () => {
   //Funcion que nos ayuda a capturar los valores dados por el usuario
   const searcher = (e) => {
     setSearch(e.target.value)
-    console.log(e.target)
   }
   //Filtramos los datos
 
@@ -34,9 +33,9 @@ export const Searchcard = () => {
             <h1>Cargando...</h1>
             :
             <div>
-              <Cards data={res} />
-              {console.log(data)}
-              {console.log(res)}
+              <Suspense>
+                <Cards data={res} />
+              </Suspense>
             </div>
         }
 

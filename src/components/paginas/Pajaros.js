@@ -20,20 +20,6 @@ const Pajaros = () => {
     <div>          
         <h1>Lista de pajarracos de chile</h1>
         <Searchcard>  </Searchcard>  
-        
-        {/*
-          cargando 
-          ?
-          <h1>Cargando...</h1>
-           :
-           <div>
-            
-            <Cards data={data} />      
-           
-           
-          </div>
-        */}
-{/* */}
         <Footer />
         
     </div>
