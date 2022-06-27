@@ -17,8 +17,8 @@ const Pajaros = () => {
   }))*/
 
   return (
-    <div>          
-        <h1>Lista de pajarracos de chile</h1>
+    <div className='fondo'>          
+        <h1 className='titulo-biblioteca'>LISTA DE AVES A LO LARGO DE CHILE</h1>
         <Searchcard>  </Searchcard>  
         <Footer />
         
