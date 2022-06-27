@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Cards } from '../cards/Cards'
 import { UseFetch } from '../UseFetch'
+import '../cards/Cards.css'
 
 
 

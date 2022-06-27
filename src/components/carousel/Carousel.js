@@ -12,24 +12,24 @@ function Carousel() {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="10000">
-                    <img src="./imagenes/cachudito.jpg" className="d-block w-100" alt="..."/>
+                    <img src="./imagenes/img1.jpg" className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5></h5>
+                        <p></p>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                    <img src="./imagenes/bailarin.jpg" className="d-block w-100" alt="..."/>
+                    <img src="./imagenes/img2.jpg" className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5></h5>
+                        <p></p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="./imagenes/bandurria.jpg" class="d-block w-100" alt="..."/>
+                    <img src="./imagenes/img3.jpg" class="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5></h5>
+                        <p></p>
                     </div>
                 </div>
             </div>
