@@ -31,14 +31,22 @@ export const UseFetch = (url) => {
       setResultado({cargando: true, data:null})
       const respues = await fetch(url) /*realiza peticion get a 
       la url esta funcion se detiene hasta que se completa la solicitud gracias a async/await*/
+      if(respues.ok){
       const data = await respues.json() /*El objeto respues devuelto por el await fetch de 
       arriba devuelve una promesa, con un metodo llamdo json() podemos extraer un objeto de 
       tipo JSON de la respuesta*/
       
       setResultado({ cargando: false, data })
+      //console.log("Desde usefetch",data)//ver los datos
+      
+      
+      }else{
+        console.log(respues.status, respues.statusText)
+      }
+      
     }
     catch(e){
-      console.log(e)
+      console.log("Error desde usefetch",e)
     }
   }
 
