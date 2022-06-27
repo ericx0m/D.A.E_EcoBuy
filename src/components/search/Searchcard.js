@@ -2,12 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import { Cards } from '../cards/Cards'
 import { UseFetch } from '../UseFetch'
-<<<<<<< HEAD
-import { Suspense } from 'react'
-=======
 import '../cards/Cards.css'
 
->>>>>>> origin/Barbara
+
 
 
 
@@ -38,9 +35,9 @@ export const Searchcard = () => {
             <h1>Cargando...</h1>
             :
             <div>
-              <Suspense>
+              
                 <Cards data={res} />
-              </Suspense>
+              
             </div>
         }
 
