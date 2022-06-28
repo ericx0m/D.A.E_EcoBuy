@@ -5,6 +5,7 @@ import Compa from '../comparador/Compa'
 import { AudioBirds } from '../audios/AudioBirds'
 import { useState } from 'react'
 
+
 export const Cardsbird = ({url}) => {
     const estado = UseFetch(url)
     const {cargando, data} = estado
@@ -15,23 +16,11 @@ export const Cardsbird = ({url}) => {
    //pajaros sin audio
    //const res = !data ? data : data.filter((dato) => console.log("Desde cardsbird",dato.name.spanish))
    
-   //const daat = JSON.parse(data)
-   console.log("asdasdasd", data)
-   //const res = !data ? data : data.filter((dato) => console.log(dato.name.spanish))
-   var str = JSON.stringify(data) //pajaros sin audio
-   
-
-   //console.log("string",str)
-   var sina = []
-   for(var i in data){
-    //if(){
-        sina.push([data[i]])
-    //}
-   }
-   console.log("aloalo",a)
-
-
-   //const datos = AudioBirds()
+   const datos = AudioBirds()
+   const alo = []
+   const alo2 = []
+   const alo3 = []
+   var dat = {}
   return (
     <div>
         {
@@ -46,15 +35,29 @@ export const Cardsbird = ({url}) => {
                     <img src={data.images.main} alt={data.uid} />
                 </div>
                 
-               {/*console.log(data)*/}
-               
-                {
-                    <Modal id={`id${data.sort}`} titulo={data.name.spanish} imagen={data.images.main} 
-                audio={data.audio.file ? data.audio.file : console.log("Audio inexistente en ", data.name.spanish)} descripcion={data.iucn.description} habitat={data.habitat} tamaño={data.size} mapa={data.map.image} />}           
+                {/* llenar alo de nombres en latin */}
+               {data.audio.file ? alo.push([data.audio.file]) : alo.push([data.name.latin])}
+
+                {console.log("Datos en arreglo alo de API uno (nombre en latin) ",alo)} 
+               {/* {alo.map(a =>console.log("nombre ",a))} */}
+                {console.log("Api dos", datos)} 
+                {/*Llenar alo2 con los nombres cientifico o en latin(ahora esta en ingles (en)) */}
+                {!datos ? !datos : alo2.push([datos.recordings.map(a=> a.en)])}
+               {/* {!datos ? !datos : alo2.push([dat])} */}
+               {/* { alo2.map(a=> console.log("alo dos", a)) }  */}
+                {console.log("El arreglo alo2", alo2)}
+                {<Modal id={`id${data.sort}`} titulo={data.name.spanish} imagen={data.images.main} 
+                audio={alo} descripcion={data.iucn.description} habitat={data.habitat} tamaño={data.size} mapa={data.map.image} />}  
+
+                
+
+
             </div>
         }
     </div>
+    
   )
+  //const datos = AudioBirds()
 }
 
 

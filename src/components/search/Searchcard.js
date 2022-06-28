@@ -30,31 +30,22 @@ export const Searchcard = () => {
   const res = !search ? data : data.filter((dato) => dato.name.spanish.toString().toLowerCase().includes(search.toLocaleLowerCase()))
   
 
-  console.log("sin audio",data)
+  //console.log("sin audio",data)
   //const datos = AudioBirds()
 
 
     return (
       <div>
         <input value={search} onChange={searcher} type="text" placeholder='¡Busca un pajaro!' className='form-control'></input>
-
         {
           cargando 
             ?
             <h1>Cargando...</h1>
             :
-            <div>
-                { /*data.map(p=>(console.log(p.name.spanish))) */}
-                <Cards data={res}  /> 
-              
-            </div>
-
-           
+            <div>                
+                <Cards data={res}  />               
+            </div>           
         }
-        {/*console.log("Desde search datos",datos)*/}
-        {/*console.log("Desde search data ",data)*/}
-        {/*console.log("Desde search estado ",estado)*/}
-
       </div>
     )
 

@@ -21,7 +21,7 @@ export const UseFetch = (url) => {
 */
   useEffect( ()=>{
     getData(url)
-  },[url])
+  },[url], 6000)
 
 
   /*Esta funcion recibira la url para poder usar fetch para realizar 

@@ -13,7 +13,7 @@ const Modal = ({ id, imagen, audio, descripcion, titulo, habitat, tamaño ,mapa 
             <div> <img src={imagen} width="200" /> </div>
             <div> 
               <audio controls>
-                <source src={audio} type="audio/wav"/>
+                <source src={audio} />
               </audio>
             </div>
             <div>
